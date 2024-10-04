@@ -1,0 +1,140 @@
+.button-15:hover {
+    background-image: linear-gradient(#229f00, #96989a);
+    border-color: rgb(0, 0, 0);
+}
+
+.button-15:active {
+    background-image: linear-gradient(#828d3b, #606060);
+    border-color: rgb(6, 0, 0);
+}
+
+.button-stiling {
+    display: flex;            
+    flex-direction: column;  
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.button-15 {
+    margin-bottom: 10px;     /* Espacio entre el botón y el párrafo */
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7c3a0180;
+}
+
+header {
+    background-image: url(fotos/header.jpg);
+    background-color: rgba(0, 0, 0, 0.35);
+    background-blend-mode: multiply;
+    padding: 0;
+    margin: 0;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 3rem;
+}
+
+.content-box h3 {
+    font-size: 2rem;
+    color: #555;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    border: 5px solid;
+    border-color: black;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media {
+    text-align: center;
+}
+
+.circle-container {
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.members {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .content-box {
+        max-width: 1080px;
+    }
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    main section h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    main section h2 {
+        font-size: 2.5rem
+    }
+}
